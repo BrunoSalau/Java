@@ -7,10 +7,6 @@ public class ContaBancaria {
         setSaldo(saldo);
     }
 
-    public String getTitular() {
-        return titular;
-    }
-
     public double getSaldo() {
         return saldo;
     }
@@ -21,5 +17,10 @@ public class ContaBancaria {
         } else {
             this.saldo = saldo;
         }
+    }
+
+    public static void main(String[] args) {
+        ContaBancaria c = new ContaBancaria("João", -100);
+        System.out.println("Saldo: " + c.getSaldo());
     }
 }
