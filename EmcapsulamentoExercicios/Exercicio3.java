@@ -7,10 +7,6 @@ public class Produto {
         setPreco(preco);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     public double getPreco() {
         return preco;
     }
@@ -21,5 +17,10 @@ public class Produto {
         } else {
             this.preco = preco;
         }
+    }
+
+    public static void main(String[] args) {
+        Produto p = new Produto("Mouse", 0);
+        System.out.println("Preço: " + p.getPreco());
     }
 }
