@@ -7,10 +7,6 @@ public class Aluno {
         setIdade(idade);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     public int getIdade() {
         return idade;
     }
@@ -21,5 +17,10 @@ public class Aluno {
         } else {
             this.idade = idade;
         }
+    }
+
+    public static void main(String[] args) {
+        Aluno a = new Aluno("Bruno", -5);
+        System.out.println("Idade: " + a.getIdade());
     }
 }
